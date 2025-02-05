@@ -1,0 +1,10 @@
+git+https://github.com/fastice/grimpfunc.git
+git+https://github.com/fastice/grimpqgis.git
+git+https://github.com/fastice/nisarcryodb.git
+git+https://github.com/fastice/nisardev.git
+git+https://github.com/fastice/nisargps.git
+git+https://github.com/fastice/nisarhdf.git
+git+https://github.com/fastice/utilities.git
+git+https://github.com/fastice/modelfunc.git
+GDAL==3.8.4
+pyshp

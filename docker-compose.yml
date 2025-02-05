@@ -1,0 +1,24 @@
+services: # Defines the services (containers) that will run in your application
+  dockertest:
+    image: dockertest1  # Specifies the docker image to use
+    container_name: icepack # Specifies the container name
+    hostname: icepack   # This will make it look like a computer called icepack
+    user: "ian" # Have it start up as me
+    stdin_open: true # Keeps stdin open, allowing interaction with the container 
+    tty: true # Allocates a pseudo-TTY, which is helpful for running interactive applications
+    ports:
+      - 9038-9088:9038-9088  # Maps this port range to the correpsponding range on the host
+    volumes:  # Mounts volumes on the servers to the same mount points on the container
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /home/ian:/home/ian
+      - /Users/ian:/Users/ian      
+      - /Volumes/insar1/ian:/Volumes/insar1/ian
+      - /Volumes/insar3/ian:/Volumes/insar3/ian
+      - /Volumes/insar4/ian:/Volumes/insar4/ian
+      - /Volumes/insar5/ian:/Volumes/insar5/ian
+      - /Volumes/insar6/ian:/Volumes/insar6/ian
+      - /Volumes/insar7/ian:/Volumes/insar7/ian
+      - /Volumes/insar8/ian:/Volumes/insar8/ian
+      - /Volumes/insar9/ian:/Volumes/insar9/ian
+      - /Volumes/insar10/ian:/Volumes/insar10/ian
+      - /Volumes/insar11/ian:/Volumes/insar11/ian      
